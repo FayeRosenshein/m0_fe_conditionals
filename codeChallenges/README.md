@@ -9,6 +9,25 @@ After completing your selected challenge(s), create a short video to share with 
 - You demonstrating the program works as intended by running the code (you should run the code more than once to prove it works for all logic paths)
 - You sharing what your struggled on or had questions about when you solved it the first time
 
+var goodDrivingRecord = true
+var isOver25 = true
+
+if (isOver25 == true && goodDrivingRecord == true) {
+  console.log("You can have a discount on your rental car");
+} else if (isOver25 == false && goodDrivingRecord == false) {
+  console.log("You need to have someone else sign for the rental car");
+}  else {
+  console.log("You have to pay full price on your rental car");
+}
+
+
+
+
+
+
+
+
+
 ## Mild
 
 Write a JavaScript program that defines a variable that stores an Number. The program should print out the String "even" if the Number is even, and the String "odd" if the Number is odd.
@@ -51,16 +70,13 @@ Write a program that evaluates the status of the variables above, and uses logic
 - If the user either has a good record or is over 25 years old, they should pay full price
 - If the user is not over 25 and has a bad driving record, they need to have someone else sign for the rental
 
-
 var goodDrivingRecord = true
 var isOver25 = true
 
-if (isOver25 == true && goodDrivingRecord == true) {
-  console.log("You can have a discount on your rental car");
-} else if (isOver25 == false && goodDrivingRecord == false) {
-  console.log("You need to have someone else sign for the rental car");
-}  else if (isOver25 == false || goodDrivingRecord == false) {
-  console.log("You have to pay full price on your rental car");
-} else if (isOver25 == false && goodDrivingRecord == false) {
-  console.log("You need to have someone else sign for the rental car");
+if ( goodDrivingRecord === true && isOver25 === true) {
+  console.log("You get a discount on your rental car");
+} else if (goodDrivingRecord === false && isOver25 === false) {
+  console.log("You need someone to sign the rental car for you");
+} else {
+  console.log("You have to pay full price for your rental car");
 }

@@ -7,6 +7,24 @@
 // Make sure to run the file in your command line using `node <filename>.js`
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // -------------------
 // PART 1: Comparing variables
 // -------------------
