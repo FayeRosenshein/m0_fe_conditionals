@@ -13,9 +13,29 @@ After completing your selected challenge(s), create a short video to share with 
 
 Write a JavaScript program that defines a variable that stores an Number. The program should print out the String "even" if the Number is even, and the String "odd" if the Number is odd.
 
+var number = 2
+
+if (number % 2 == 0) {
+  console.log("even");
+} else {
+  console.log("odd");
+}
+
 ## Medium
 
 Write a JavaScript program that prints out a String or Number: The printed value will depend on the value of an Number. If the Number is a mulitple of 3, print "Fizz". If the Number is a multiple of 5, print "Buzz". If the Number is a multiple of both 3 and 5, print "FizzBuzz". If the Number is not a multiple of either, print the Number itself.
+
+var age = 27
+var height = 5
+var number = age*height
+
+if (number % 3 == 0 && number % 5 == 0) {
+  console.log("FizzBuzz");
+} else if (number % 3 == 0) {
+  console.log("Fizz");
+} else if (number % 5 == 0) {
+  console.log("Buzz");
+}
 
 ## Spicy
 
@@ -30,3 +50,17 @@ Write a program that evaluates the status of the variables above, and uses logic
 - If the driving record is good and user is over 25 years old, they should get a discount on the car rental
 - If the user either has a good record or is over 25 years old, they should pay full price
 - If the user is not over 25 and has a bad driving record, they need to have someone else sign for the rental
+
+
+var goodDrivingRecord = true
+var isOver25 = true
+
+if (isOver25 == true && goodDrivingRecord == true) {
+  console.log("You can have a discount on your rental car");
+} else if (isOver25 == false && goodDrivingRecord == false) {
+  console.log("You need to have someone else sign for the rental car");
+}  else if (isOver25 == false || goodDrivingRecord == false) {
+  console.log("You have to pay full price on your rental car");
+} else if (isOver25 == false && goodDrivingRecord == false) {
+  console.log("You need to have someone else sign for the rental car");
+}
